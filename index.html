@@ -1,0 +1,58 @@
+<!-- 
+    1- Adjust the quantity of each item through  “+” and “-” buttons.
+    2 Delete items from the cart.
+    3- Like items through a clickable heart-shaped button that will change color accordingly.
+    4- See the total price adjusted according to quantity and deletions. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!-- Article 1 -->
+    <div class="article">
+        <div class="imgArticle">
+            <img src="res/flocons.png" alt="flocons" />
+            <span id="price1">230 DZ</span>
+        </div>
+
+        <div>
+            <button onclick="count('-','qt1','price1','totalA1')">-</button>
+            <span id="qt1"> 1 </span>
+            <button onclick="count('+','qt1','price1','totalA1')">+</button>
+        </div>
+        <div class="prix">
+            <span id="totalA1" class="totalA">230 DZ</span>
+        </div>
+    </div>
+
+    <!-- Article 2 -->
+    <div class="article">
+        <div class="imgArticle">
+            <img src="res/lait.png" alt="" />
+            <span id="price2">150 DZ</span>
+        </div>
+    
+        <div>
+            <button onclick="count('-','qt2','price2','totalA2')">-</button>
+            <span id="qt2"> 1 </span>
+            <button onclick="count('+','qt2','price2','totalA2')">+</button>
+        </div>
+        <div class="prix">
+            <span id="totalA2" class="total">150 DZ</span>
+        </div>
+    </div>
+
+    <span id="totalCart" >380 DZ</span>
+    <!-- Js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
